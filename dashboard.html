@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="text-center p-3">
+        <!-- Main Welcome Message -->
+        <h2 class="text-secondary mb-3">Hello, <span class="fw-bold text-primary">{{ session['username'] }}</span>!</h2>
+        
+        <p class="lead text-dark mb-4">
+            Welcome to your personal dashboard. You are securely logged in.
+        </p>
+
+        <!-- Logout Button -->
+        <a href="{{ url_for('logout') }}" class="btn btn-danger btn-lg w-75 mt-3">Log Out</a>
+    </div>
+{% endblock %}

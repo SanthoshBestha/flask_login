@@ -1,0 +1,15 @@
+Python
+
+pycache/
+*.pyc
+venv/
+.env
+
+Flask
+
+instance/
+
+Database Credentials (If using a .env file)
+
+config.py
+secrets.json
